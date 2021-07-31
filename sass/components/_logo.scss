@@ -1,0 +1,22 @@
+.logo {
+	font-family: "Raleway", sans-serif;
+	@include font(26px, 700, 31px);
+	color: #000000;
+	text-decoration: none;
+	animation-duration: 500ms;
+	animation-timing-function: var(--timing-function);
+
+	&__first-part {
+		color: var(--accent-color);
+	}
+
+	&__text-header {
+		padding: 24px 0;
+		margin-right: 90px;
+	}
+	&__text-footer {
+		color: var(--primary-white-color);
+		margin-bottom: 20px;
+		display: block;
+	}
+}

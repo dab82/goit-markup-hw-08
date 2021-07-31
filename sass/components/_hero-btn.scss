@@ -1,0 +1,21 @@
+.main-button {
+	@include font(16px, 700, 30px);
+	color: var(--primary-white-color);
+	background-color: var(--accent-color);
+	border: none;
+	border-radius: 4px;
+	font-family: inherit;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.06em;
+	padding: 10px 32px;
+	transition: color var(--effect-duration) var(--timing-function),
+		background var(--effect-duration) var(--timing-function);
+
+	&:hover,
+	&:focus {
+		color: var(--primary-text-color);
+		background: var(--background-color);
+		cursor: pointer;
+	}
+}

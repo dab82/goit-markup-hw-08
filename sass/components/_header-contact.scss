@@ -1,0 +1,29 @@
+// .header-contact__list {
+// 	display: flex;
+// 	align-items: center;
+// }
+
+// .header-contact__item:not(:last-child) {
+// 	margin-right: 50px;
+// }
+
+// .header-contact__link {
+// 	display: flex;
+// 	align-items: center;
+// 	@include font();
+// 	color: var(--second-text-color);
+// 	font-style: normal;
+// 	text-decoration: none;
+// 	letter-spacing: 0.02em;
+// 	transition: color var(--effect-duration) var(--timing-function);
+
+// 	&:hover,
+// 	&:focus {
+// 		color: var(--accent-color);
+// 	}
+// }
+
+// .header-contact__icon {
+// 	margin-right: 10px;
+// 	fill: currentColor;
+// }
