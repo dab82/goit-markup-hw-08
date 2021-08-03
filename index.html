@@ -55,6 +55,55 @@
 						</li>
 					</ul>
 				</div>
+				<button class="burger-btn" data-menu-open>
+					<svg class="burger-btn__icon">
+						<use href="./images/sprite.svg#icon-mobile-menu"></use>
+					</svg>
+				</button>
+			</div>
+			<div class="mobile-menu" data-menu>
+				<div class="container mobile-menu__container">
+					<button type="button" class="mobile-menu__close-btn" data-menu-close>
+						<svg class="mobile-menu__icon" width="40" height="40"
+							aria-label="кнопка закрытия мобильного меню">
+							<use href="./images/sprite.svg#icon-mobile-close"></use>
+						</svg>
+					</button>
+					<ul class="mobile-menu-list">
+						<li class="mobile-menu-list__item">
+							<a href="./index.html"
+								class="mobile-menu-list__link mobile-menu-list__link--current">Студия</a>
+						</li>
+						<li class="mobile-menu-list__item">
+							<a href="./portfolio.html" class="mobile-menu-list__link">Портфолио</a>
+						</li>
+						<li class="mobile-menu-list__item">
+							<a href="#" class="mobile-menu-list__link">Контакты</a>
+						</li>
+					</ul>
+					<ul>
+						<li class="mobile-menu__phone--alignment">
+							<a href="tel:+380961111111" class="mobile-menu__phone">+38 096 111 11 11</a>
+						</li>
+						<li class="mobile-menu__email--alignment">
+							<a href="mailto:info@devstudio.com" class="mobile-menu__email">info@devstudio.com</a>
+						</li>
+					</ul>
+					<ul class="sm-list">
+						<li class="sm-list__icon">
+							<a href="#" class="sm-list__link" target="_blank" rel="noopener norefferer">Instagram</a>
+						</li>
+						<li class="sm-list__icon">
+							<a href="#" class="sm-list__link" target="_blank" rel="noopener norefferer">Twitter</a>
+						</li>
+						<li class="sm-list__icon">
+							<a href="#" class="sm-list__link" target="_blank" rel="noopener norefferer">Facebook</a>
+						</li>
+						<li class="sm-list__icon">
+							<a href="#" class="sm-list__link" target="_blank" rel="noopener norefferer">LinkedIn</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</header>
 
@@ -161,7 +210,31 @@
 					<h2 class="title">Наша команда</h2>
 					<ul class="our-team">
 						<li class="our-team__list-specialist">
-							<img src="./images/img_1.jpg" alt="Игорь" width="270" />
+							<picture>
+								<source media="(min-width: 1200px)"
+									srcset="./images/desc/desc-specialist-1.webp 1x, ./images/desc/desc-specialist-1@2x.webp 2x"
+									type="image/webp" />
+								<source media="(min-width: 1200px)"
+									srcset="./images/desc/desc-specialist-1.jpg 1x, ./images/desc/desc-specialist-1@2x.jpg 2x" />
+								<source media="(min-width: 768px)" srcset="
+							                    ./images/tab/tablet-specialist-1.webp 1x,
+							                    ./images/tab/tablet-specialist-1@2x.webp 2x
+							                  " type="image/webp" />
+								<source media="(min-width: 768px)" srcset="
+							                    ./images/tab/tablet-specialist-1.jpg 1x,
+							                    ./images/tab/tablet-specialist-1@2x.jpg 2x
+							                  " />
+								<source media="(min-width: 480px)" srcset="
+							                    ./images/mob/mobile-specialist-1.webp    1x,
+							                    ./images/mob/mobile-specialist-1@2x.webp 2x
+							                  " type="image/webp" />
+								<source media="(min-width: 480px)" srcset="
+							                    ./images/mob/mobile-specialist-1.jpg    1x,
+							                    ./images/mob/mobile-specialist-1@2x.jpg 2x
+							                  " />
+								<img src="./images/MOB/mobile-specialist-1.jpg"
+									alt="Игорь Демьяненко - Product Designer" class="our-team__img" />
+							</picture>
 							<div class="our-team__our-specialist">
 								<h3 class="specialist">Игорь Демьяненко</h3>
 								<p class="our-team__job">Product Designer</p>
@@ -198,7 +271,25 @@
 							</div>
 						</li>
 						<li class="our-team__list-specialist">
-							<img src="./images/img_2.jpg" alt="Ольга" width="270" />
+							<picture>
+								<source media="(min-width: 1200px)"
+									srcset="./images/desc/desc-specialist-2.webp 1x, ./images/desc/desc-specialist-2@2x.webp 2x"
+									type="image/webp" />
+								<source media="(min-width: 1200px)"
+									srcset="./images/desc/desc-specialist-2.jpg 1x, ./images/desc/desc-specialist-2@2x.jpg 2x" />
+								<source media="(min-width: 768px)" srcset="./images/tab/tablet-specialist-2.webp 1x,
+							                    ./images/tab/tablet-specialist-2@2x.webp 2x" type="image/webp" />
+
+								<source media="(min-width: 768px)" srcset="./images/tab/tablet-specialist-2.jpg 1x,
+							                    ./images/tab/tablet-specialist-2@2x.jpg 2x" />
+
+								<source media="(min-width: 480px)" srcset="./images/mob/mobile-specialist-2.webp 1x,
+							                    ./images/mob/mobile-specialist-2@2x.webp 2x" type="image/webp" />
+								<source media="(min-width: 480px)" srcset="./images/mob/mobile-specialist-2.jpg 1x,
+							                    ./images/mob/mobile-specialist-2@2x.jpg 2x" />
+								<img src="./images/MOB/mobile-specialist-2.jpg" alt="Ольга Репина - Frontend Developer"
+									class="our-team__img" />
+							</picture>
 							<div class="our-team__our-specialist">
 								<h3 class="specialist">Ольга Репина</h3>
 								<p class="our-team__job">Frontend Developer</p>
@@ -235,7 +326,25 @@
 							</div>
 						</li>
 						<li class="our-team__list-specialist">
-							<img src="./images/img_3.jpg" alt="Николай" width="270" />
+							<picture>
+								<source media="(min-width: 1200px)"
+									srcset="./images/desc/desc-specialist-3.webp 1x, ./images/desc/desc-specialist-3@2x.webp 2x"
+									type="image/webp" />
+								<source media="(min-width: 1200px)"
+									srcset="./images/desc/desc-specialist-3.jpg 1x, ./images/desc/desc-specialist-3@2x.jpg 2x" />
+								<source media="(min-width: 768px)" srcset="./images/tab/tablet-specialist-3.webp 1x,
+								 ./images/tab/tablet-specialist-3@2x.webp 2x" type="image/webp" />
+
+								<source media="(min-width: 768px)" srcset="./images/tab/tablet-specialist-3.jpg 1x,
+								 ./images/tab/tablet-specialist-3@2x.jpg 2x" />
+
+								<source media="(min-width: 480px)" srcset="./images/mob/mobile-specialist-3.webp 1x,
+							 ./images/mob/mobile-specialist-3@2x.webp 2x" type="image/webp" />
+								<source media="(min-width: 480px)" srcset="./images/mob/mobile-specialist-3.jpg 1x,
+								./images/mob/mobile-specialist-3@2x.jpg 2x" />
+								<img src="./images/MOB/mobile-specialist-3.jpg" alt="Николай Тарасов - Marketing"
+									class="our-team__img" />
+							</picture>
 							<div class="our-team__our-specialist">
 								<h3 class="specialist">Николай Тарасов</h3>
 								<p class="our-team__job">Marketing</p>
@@ -272,7 +381,25 @@
 							</div>
 						</li>
 						<li class="our-team__list-specialist">
-							<img src="./images/img_4.jpg" alt="Михаил" width="270" />
+							<picture>
+								<source media="(min-width: 1200px)"
+									srcset="./images/desc/desc-specialist-4.webp 1x, ./images/desc/desc-specialist-4@2x.webp 2x"
+									type="image/webp" />
+								<source media="(min-width: 1200px)"
+									srcset="./images/desc/desc-specialist-4.jpg 1x, ./images/desc/desc-specialist-4@2x.jpg 2x" />
+								<source media="(min-width: 768px)" srcset="./images/tab/tablet-specialist-4.webp 1x,
+															 ./images/tab/tablet-specialist-4@2x.webp 2x" type="image/webp" />
+
+								<source media="(min-width: 768px)" srcset="./images/tab/tablet-specialist-4.jpg 1x,
+															 ./images/tab/tablet-specialist-4@2x.jpg 2x" />
+
+								<source media="(min-width: 480px)" srcset="./images/mob/mobile-specialist-4.webp 1x,
+														 ./images/mob/mobile-specialist-4@2x.webp 2x" type="image/webp" />
+								<source media="(min-width: 480px)" srcset="./images/mob/mobile-specialist-4.jpg 1x,
+															./images/mob/mobile-specialist-4@2x.jpg 2x" />
+								<img src="./images/MOB/mobile-specialist-4.jpg" alt="Михаил Ермаков - UI Designer"
+									class="our-team__img" />
+							</picture>
 							<div class="our-team__our-specialist">
 								<h3 class="specialist">Михаил Ермаков</h3>
 								<p class="our-team__job">UI Designer</p>
@@ -362,7 +489,7 @@
 				<div class="adress">
 					<a class="logo logo__text-footer" href="./"><span class="logo__first-part">Web</span>Studio</a>
 					<address>
-						<ul class=" list-footer">
+						<ul class="list-footer">
 							<li class="list-footer-item">
 								<a class="adress-footer" href="https://goo.gl/maps/jzQwwj4ujLne8MiLA" target="_blank"
 									rel="noopener noreferrer">
@@ -476,6 +603,7 @@
 				</form>
 			</div>
 		</div>
+		<script src="./js/mobile-menu.js"></script>
 		<script src="./js/modal.js"></script>
 	</body>
 
