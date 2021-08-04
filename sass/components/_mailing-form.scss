@@ -1,7 +1,17 @@
 .mailing {
-	/* display: flex; */
-	padding-top: 72px;
-	padding-bottom: 94px;
+	text-align: center;
+	padding-bottom: 60px;
+
+	@media screen and (min-width: 1200px) {
+		text-align: left;
+		padding-top: 72px;
+		padding-bottom: 0;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+	.mailing {
+		grid-area: subscribe;
+	}
 }
 .mailing-form {
 	position: relative;
