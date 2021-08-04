@@ -1393,11 +1393,6 @@ body {
   transition: color var(--effect-duration) var(--timing-function);
 }
 
-.mail-pos {
-  display: block;
-  align-items: flex-end;
-}
-
 .main-section-portfolio {
   padding: 94px 0;
 }
