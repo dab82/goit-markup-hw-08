@@ -1,30 +1,20 @@
-.list-filtre {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 50px;
-}
-.filtre-item:not(:last-child) {
-	margin-right: 8px;
-}
-
 .filtre {
 	@include font(16px, 500, 26px);
 	color: var(--primary-text-color);
 	background: var(--background-color);
 	font-family: inherit;
-	// font-weight: 500;
-	// font-size: 16px;
-	// line-height: 1.63;
-	text-align: center;
-	border-radius: 4px;
+	letter-spacing: 0.03em;
 	border: none;
+	border-radius: 4px;
+	cursor: pointer;
 	padding: 6px 25px;
 	transition: color var(--effect-duration) var(--timing-function),
 		background var(--effect-duration) var(--timing-function),
 		box-shadow var(--effect-duration) var(--timing-function);
 
 	&:hover,
-	&:focus {
+	&:focus,
+	&:active {
 		color: var(--primary-white-color);
 		background: var(--accent-color);
 		box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -32,9 +22,28 @@
 		cursor: pointer;
 	}
 }
-
 .all {
 	color: var(--primary-white-color);
 	background: var(--accent-color);
 	fill: var(--primary-white-color);
+}
+.list-filtre {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: left;
+	margin-bottom: 25px;
+
+	@media screen and(min-width: 768px) {
+		justify-content: center;
+		margin-bottom: 15px;
+	}
+	@media screen and(min-width: 1200px) {
+		justify-content: center;
+		margin-bottom: 35px;
+	}
+}
+
+.filtre-item:not(:last-of-type) {
+	margin-right: 8px;
+	margin-bottom: 15px;
 }

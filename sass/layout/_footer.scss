@@ -52,7 +52,10 @@
 }
 .footer-contact {
 	color: rgba(255, 255, 255, 0.6);
+	@include font(14px, 400, 24px);
+	letter-spacing: 0.03em;
 	font-style: normal;
+	text-decoration: none;
 	transition: color var(--effect-duration) var(--timing-function);
 }
 
@@ -72,14 +75,4 @@
 // 	padding-top: 60px;
 // 	padding-bottom: 60px;
 // 	margin-right: 70px;
-// }
-
-// .footer-contact {
-// 	font-size: 14px;
-// 	line-height: 1.71;
-// 	letter-spacing: 0.03em;
-// 	color: rgba(255, 255, 255, 0.6);
-// 	text-decoration: none;
-// 	font-style: normal;
-// 	transition: color var(--effect-duration) var(--timing-function);
 // }
