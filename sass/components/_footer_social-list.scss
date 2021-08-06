@@ -12,12 +12,13 @@
 	text-align: center;
 	padding-bottom: 60px;
 
-	@media screen and (min-width: 1200px) {
+	@media screen and (min-width: $desktop) {
 		text-align: left;
 		padding-top: 72px;
 		padding-bottom: 0;
+		margin-right: 93px;
 	}
-	@media screen and (min-width: 768px) and (max-width: 1199px) {
+	@media screen and (min-width: $tablet) and (max-width: 1199px) {
 		& {
 			grid-area: social;
 			padding-top: 60px;
