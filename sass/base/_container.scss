@@ -3,7 +3,7 @@
 	padding-right: 15px;
 }
 
-// 480+
+// 480+ //
 @media screen and (min-width: $mobile) {
 	.container {
 		width: $mobile;
@@ -11,14 +11,14 @@
 	}
 }
 
-// 768+
+// 768+ //
 @media screen and (min-width: $tablet) {
 	.container {
 		width: $tablet;
 	}
 }
 
-// 1200+
+// 1200+ //
 @media screen and (min-width: $desktop) {
 	.container {
 		width: $desktop;

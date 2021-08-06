@@ -1,18 +1,25 @@
 .logo {
 	font-family: "Raleway", sans-serif;
-	@include font(26px, 700, 31px);
+	@include font(24px, 700, 28px);
+	letter-spacing: 0.03em;
 	color: #000000;
 	text-decoration: none;
 	animation-duration: 500ms;
 	animation-timing-function: var(--timing-function);
+	@media screen and(min-width: $desktop) {
+		@include font(26px, 700, 31px);
+	}
 
 	&__first-part {
 		color: var(--accent-color);
 	}
 
 	&__text-header {
-		padding: 24px 0;
+		padding: 16px 0;
 		margin-right: 90px;
+		@media screen and(min-width: $tablet) {
+			padding: 24px 0;
+		}
 	}
 	&__text-footer {
 		color: var(--primary-white-color);

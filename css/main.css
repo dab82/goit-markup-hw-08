@@ -100,13 +100,22 @@ body {
 
 .logo {
   font-family: "Raleway", sans-serif;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 1.19;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   color: #000000;
   text-decoration: none;
   animation-duration: 500ms;
   animation-timing-function: var(--timing-function);
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.19;
+  }
 }
 
 .logo__first-part {
@@ -114,8 +123,14 @@ body {
 }
 
 .logo__text-header {
-  padding: 24px 0;
+  padding: 16px 0;
   margin-right: 90px;
+}
+
+@media screen and (min-width: 768px) {
+  .logo__text-header {
+    padding: 24px 0;
+  }
 }
 
 .logo__text-footer {

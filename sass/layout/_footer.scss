@@ -7,16 +7,16 @@
 	padding-top: 60px;
 	padding-bottom: 60px;
 
-	@media screen and (min-width: 768px) and (max-width: 1199px) {
+	@media screen and (min-width: $tablet) and (max-width: 1199px) {
 		grid-area: contacts;
 	}
 
-	@media screen and (min-width: 1200px) {
+	@media screen and (min-width: $desktop) {
 		margin-right: 70px;
 		text-align: left;
 	}
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: $tablet) and (max-width: 1199px) {
 	.fc {
 		display: grid;
 		grid-template-columns: 50% 1fr;
@@ -25,7 +25,7 @@
 	}
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: $desktop) {
 	.fc {
 		display: flex;
 	}

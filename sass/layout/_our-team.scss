@@ -3,20 +3,20 @@
 	text-align: center;
 	padding: 60px 0;
 
-	@media screen and(min-width: 1200px) {
+	@media screen and(min-width: $desktop) {
 		& {
 			padding: 94px 0;
 		}
 	}
 }
 .our-team {
-	@media screen and(min-width: 768px) {
+	@media screen and(min-width: $tablet) {
 		display: grid;
 		grid-gap: 30px;
 		grid-template-columns: repeat(2, 354px);
 	}
 
-	@media screen and(min-width: 1200px) {
+	@media screen and(min-width: $desktop) {
 		grid-template-columns: repeat(4, 270px);
 	}
 }
@@ -31,7 +31,7 @@
 		margin-bottom: 30px;
 	}
 }
-@media screen and(min-width: 768px) {
+@media screen and(min-width: $tablet) {
 	.our-team__list-specialist:not(:last-child) {
 		margin-bottom: 0;
 	}
@@ -43,7 +43,7 @@
 	display: block;
 	text-align: center;
 
-	@media screen and(min-width: 1200px) {
+	@media screen and(min-width: $desktop) {
 		padding-bottom: 30px;
 	}
 }

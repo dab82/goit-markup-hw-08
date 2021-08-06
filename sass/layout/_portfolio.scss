@@ -2,20 +2,20 @@
 	padding-top: 60px;
 	padding-bottom: 60px;
 
-	@media screen and (min-width: 1200px) {
+	@media screen and (min-width: $desktop) {
 		padding-top: 94px;
 		padding-bottom: 94px;
 	}
 }
 
 .portfolio {
-	@media screen and(min-width: 768px) {
+	@media screen and(min-width: $tablet) {
 		display: grid;
 		grid-gap: 30px;
 		grid-template-columns: repeat(2, 354px);
 	}
 
-	@media screen and(min-width: 1200px) {
+	@media screen and(min-width: $desktop) {
 		grid-template-columns: repeat(3, 370px);
 	}
 }
@@ -28,7 +28,7 @@
 		margin-bottom: 30px;
 	}
 
-	@media screen and(min-width: 768px) {
+	@media screen and(min-width: $tablet) {
 		display: flex;
 
 		&:not(:last-child) {
@@ -61,13 +61,13 @@
 	overflow: auto;
 	transition: transform var(--effect-duration) var(--timing-function);
 
-	@media screen and(min-width: 480px) {
+	@media screen and(min-width: $mobile) {
 		padding-top: 76px;
 	}
-	@media screen and(min-width: 768px) {
+	@media screen and(min-width: $tablet) {
 		padding-top: 48px;
 	}
-	@media screen and(min-width: 1200px) {
+	@media screen and(min-width: $desktop) {
 		padding-top: 62px;
 	}
 	.project-link:hover &,
@@ -82,7 +82,7 @@
 	border-left: 1px solid #eeeeee;
 	border-right: 1px solid #eeeeee;
 
-	@media screen and(min-width: 768px) {
+	@media screen and(min-width: $tablet) {
 		flex-grow: 1;
 		flex-direction: column;
 	}
@@ -100,7 +100,7 @@
 	letter-spacing: 0.03em;
 }
 .project-link {
-	@media screen and(min-width: 768px) {
+	@media screen and(min-width: $tablet) {
 		display: flex;
 		flex-direction: column;
 	}
