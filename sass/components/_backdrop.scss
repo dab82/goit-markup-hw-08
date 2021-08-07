@@ -4,6 +4,8 @@
 	left: 0;
 	bottom: 0;
 	right: 0;
+	overflow-x: hidden;
+	overflow-y: scroll;
 	background-color: rgba(0, 0, 0, 0.2);
 	opacity: 1;
 	transition: opacity 500ms var(--timing-function);

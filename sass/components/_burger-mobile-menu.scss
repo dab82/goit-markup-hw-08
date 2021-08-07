@@ -2,6 +2,8 @@
 	position: fixed;
 	top: 0;
 	left: 0;
+	overflow-x: hidden;
+	overflow-y: scroll;
 	width: 100vw;
 	height: 110%;
 	background-color: var(--primary-white-color);
@@ -52,7 +54,7 @@
 	padding-left: 40px;
 }
 .mobile-menu-list {
-	margin-bottom: 200px;
+	margin-bottom: 151px;
 
 	@media screen and(min-width: 400px) {
 		margin-bottom: 302px;

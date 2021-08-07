@@ -16,6 +16,7 @@
 	@include font(20px, 700, 23px);
 	color: var(--primary-text-color);
 	margin-bottom: 12px;
+	text-align: center;
 }
 .modal-form-field {
 	font-size: 12px;
@@ -82,12 +83,17 @@
 
 .modal-custom-checkbox {
 	position: relative;
+	display: flex;
+	@include font(11px, 400, 14px);
+	letter-spacing: 0.03em;
 }
 .modal-form-checkbox-label {
 	color: var(--second-text-color);
-	line-height: 1.71;
-	letter-spacing: 0.03em;
 	margin-bottom: 30px;
+
+	@media screen and (min-width: $desktop) {
+		@include font(14px, 400, 24px);
+	}
 }
 .modal-form-label-link {
 	color: var(--accent-color);
@@ -106,19 +112,19 @@
 }
 
 .modal-form-checkbox-label {
-	display: flex;
+	// display: flex;
 	align-items: center;
 	justify-content: center;
 	margin-bottom: 20px;
 
 	&::before {
-		display: block;
+		display: inline-block;
 		content: "";
-		width: 16px;
-		height: 15px;
+		min-width: 16px;
+		min-height: 15px;
 		border: 2px solid var(--primary-text-color);
 		cursor: pointer;
-		margin-right: 7px;
+		margin-right: 8px;
 		background: var(--primary-white-color);
 		border-radius: 2px;
 	}

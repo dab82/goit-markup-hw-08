@@ -211,6 +211,8 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
   width: 100vw;
   height: 110%;
   background-color: var(--primary-white-color);
@@ -260,7 +262,7 @@ body {
 }
 
 .mobile-menu-list {
-  margin-bottom: 200px;
+  margin-bottom: 151px;
 }
 
 @media screen and (min-width: 400px) {
@@ -451,6 +453,8 @@ body {
   left: 0;
   bottom: 0;
   right: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity 500ms var(--timing-function);
@@ -540,6 +544,7 @@ body {
   line-height: 1.15;
   color: var(--primary-text-color);
   margin-bottom: 12px;
+  text-align: center;
 }
 
 .modal-form-field {
@@ -609,13 +614,24 @@ body {
 
 .modal-custom-checkbox {
   position: relative;
+  display: flex;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.27;
+  letter-spacing: 0.03em;
 }
 
 .modal-form-checkbox-label {
   color: var(--second-text-color);
-  line-height: 1.71;
-  letter-spacing: 0.03em;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form-checkbox-label {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+  }
 }
 
 .modal-form-label-link {
@@ -636,20 +652,19 @@ body {
 }
 
 .modal-form-checkbox-label {
-  display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
 }
 
 .modal-form-checkbox-label::before {
-  display: block;
+  display: inline-block;
   content: "";
-  width: 16px;
-  height: 15px;
+  min-width: 16px;
+  min-height: 15px;
   border: 2px solid var(--primary-text-color);
   cursor: pointer;
-  margin-right: 7px;
+  margin-right: 8px;
   background: var(--primary-white-color);
   border-radius: 2px;
 }
