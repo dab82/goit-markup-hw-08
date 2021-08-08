@@ -5,7 +5,7 @@
 	overflow-x: hidden;
 	overflow-y: scroll;
 	width: 100vw;
-	height: 110%;
+	height: 100%;
 	background-color: var(--primary-white-color);
 	z-index: 100;
 
@@ -49,17 +49,13 @@
 
 .mobile-menu__container {
 	position: relative;
-	min-height: 200px;
-	padding-top: 48px;
-	padding-left: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	padding: 48px 0 48px 40px;
 }
 .mobile-menu-list {
-	margin-bottom: 151px;
-
-	@media screen and(min-width: 400px) {
-		margin-bottom: 302px;
-	}
-
 	&__item:not(:last-child) {
 		margin-bottom: 32px;
 	}

@@ -214,7 +214,7 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   width: 100vw;
-  height: 110%;
+  height: 100%;
   background-color: var(--primary-white-color);
   z-index: 100;
   opacity: 0;
@@ -256,19 +256,11 @@ body {
 
 .mobile-menu__container {
   position: relative;
-  min-height: 200px;
-  padding-top: 48px;
-  padding-left: 40px;
-}
-
-.mobile-menu-list {
-  margin-bottom: 151px;
-}
-
-@media screen and (min-width: 400px) {
-  .mobile-menu-list {
-    margin-bottom: 302px;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 48px 0 48px 40px;
 }
 
 .mobile-menu-list__item:not(:last-child) {
@@ -1136,12 +1128,13 @@ body {
 }
 
 .main-features {
-  padding-top: 60px;
+  padding: 60px 0;
 }
 
 @media screen and (min-width: 1200px) {
   .main-features {
     padding-top: 94px;
+    padding-bottom: 0;
   }
 }
 
@@ -1178,12 +1171,30 @@ body {
   margin-bottom: 10px;
 }
 
+.features__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .features__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .features {
     display: grid;
-    grid-gap: 30px;
     grid-template-columns: repeat(2, 354px);
   }
+}
+
+@media screen and (min-width: 768px) and (min-width: 768px) and (max-width: 1199px) {
+  .features {
+    grid-gap: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   __item {
     width: 354px;
   }
@@ -1208,7 +1219,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .features__item {
-    flex-basis: 270px;
+    flex-basis: calc((100% - 30px) / 4);
   }
   .features__item:not(:last-child) {
     margin-right: 30px;
@@ -1447,27 +1458,30 @@ body {
 }
 
 .list-footer-item {
-  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-style: normal;
+}
+
+.list-footer-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+  .list-footer-item:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .adress-footer {
   color: var(--primary-white-color);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.71;
-  display: block;
-  letter-spacing: 0.03em;
-  font-style: normal;
   text-decoration: none;
 }
 
 .footer-contact {
   color: rgba(255, 255, 255, 0.6);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  font-style: normal;
   text-decoration: none;
   transition: color var(--effect-duration) var(--timing-function);
 }

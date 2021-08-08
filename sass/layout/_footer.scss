@@ -40,39 +40,24 @@
 	}
 }
 .list-footer-item {
-	text-decoration: none;
-}
-.adress-footer {
-	color: var(--primary-white-color);
 	@include font(14px, 400, 24px);
-	display: block;
 	letter-spacing: 0.03em;
 	font-style: normal;
+
+	&:not(:last-child) {
+		margin-bottom: 8px;
+		@media screen and (min-width: $desktop) {
+			margin-bottom: 9px;
+		}
+	}
+}
+
+.adress-footer {
+	color: var(--primary-white-color);
 	text-decoration: none;
 }
 .footer-contact {
 	color: rgba(255, 255, 255, 0.6);
-	@include font(14px, 400, 24px);
-	letter-spacing: 0.03em;
-	font-style: normal;
 	text-decoration: none;
 	transition: color var(--effect-duration) var(--timing-function);
 }
-
-// .list-footer-item:not(:last-child) {
-// 	margin-bottom: 9px;
-// }
-
-// .footer {
-// 	background-color: var(--second-dark-color);
-// 	padding: 0 15px;
-// }
-// .fc {
-// 	display: flex;
-// }
-// .adress {
-// 	width: 231px;
-// 	padding-top: 60px;
-// 	padding-bottom: 60px;
-// 	margin-right: 70px;
-// }
